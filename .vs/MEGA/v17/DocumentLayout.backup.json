@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Frenemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Frenemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Person.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\main.cpp",
+              "RelativeDocumentMoniker": "Source Files\\main.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\main.cpp",
+              "RelativeToolTip": "Source Files\\main.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAALMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-15T13:25:09.332Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.h",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Player.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.h",
+              "RelativeToolTip": "Source Files\\Classes\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-16T11:37:09.837Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.cpp",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Player.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.cpp",
+              "RelativeToolTip": "Source Files\\Classes\\Player.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAASwC8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-16T11:39:48.612Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frenemy.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.h",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Frenemy.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.h",
+              "RelativeToolTip": "Source Files\\Classes\\Frenemy.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-20T09:08:18.761Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frenemy.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.cpp",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Frenemy.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.cpp",
+              "RelativeToolTip": "Source Files\\Classes\\Frenemy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-18T16:30:47.914Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bullet.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.h",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Bullet.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.h",
+              "RelativeToolTip": "Source Files\\Classes\\Bullet.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-18T17:47:47.3Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bullet.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.cpp",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Bullet.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.cpp",
+              "RelativeToolTip": "Source Files\\Classes\\Bullet.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-18T17:48:33.219Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Person.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.h",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Person.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.h",
+              "RelativeToolTip": "Source Files\\Classes\\Person.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-27T12:10:30.429Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Person.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.cpp",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\Person.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.cpp",
+              "RelativeToolTip": "Source Files\\Classes\\Person.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-27T12:10:34.278Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
