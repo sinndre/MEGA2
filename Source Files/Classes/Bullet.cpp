@@ -31,7 +31,7 @@ void Bullet::Update()
 	if (!isAlive) return;
 
 	// Move bullet
-	position = Vector2Add(position, Vector2Scale(velocity, GetFrameTime()));
+	position = Vector2Add(position, Vector2Scale(velocity, GetFrameTime()/2));
 
 	lifeTimer -= GetFrameTime();
 	if (lifeTimer <= 0.0f) {

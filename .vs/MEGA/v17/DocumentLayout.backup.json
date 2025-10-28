@@ -1,41 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\",
+  "WorkspaceRootPath": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\WorldTiles.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\WorldTiles.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\WorldTiles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\WorldTiles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Frenemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Frenemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Frenemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Frenemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Person.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0CFE40F5-0B1F-42DB-A90F-BB4C313AEBEB}|MEGA.vcxproj|solutionrelative:Source Files\\Classes\\Person.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -46,17 +54,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\main.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\main.cpp",
               "RelativeDocumentMoniker": "Source Files\\main.cpp",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\main.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\main.cpp",
               "RelativeToolTip": "Source Files\\main.cpp",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAALMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAlwFMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-15T13:25:09.332Z",
               "IsPinned": true,
@@ -64,11 +72,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Player.h",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Player.h",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Player.h",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Player.h",
               "RelativeToolTip": "Source Files\\Classes\\Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -77,11 +85,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Player.cpp",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Player.cpp",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Player.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Player.cpp",
               "RelativeToolTip": "Source Files\\Classes\\Player.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAASwC8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -90,11 +98,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Frenemy.h",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Frenemy.h",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Frenemy.h",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Frenemy.h",
               "RelativeToolTip": "Source Files\\Classes\\Frenemy.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -103,11 +111,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Frenemy.cpp",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Frenemy.cpp",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Frenemy.cpp",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Frenemy.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Frenemy.cpp",
               "RelativeToolTip": "Source Files\\Classes\\Frenemy.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -118,35 +126,37 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Bullet.h",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Bullet.h",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Bullet.h",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Bullet.h",
               "RelativeToolTip": "Source Files\\Classes\\Bullet.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-18T17:47:47.3Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Bullet.cpp",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Bullet.cpp",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Bullet.cpp",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Bullet.cpp",
-              "RelativeToolTip": "Source Files\\Classes\\Bullet.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Bullet.cpp*",
+              "RelativeToolTip": "Source Files\\Classes\\Bullet.cpp*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-18T17:48:33.219Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Person.h",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Person.h",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Person.h",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Person.h",
               "RelativeToolTip": "Source Files\\Classes\\Person.h",
               "ViewState": "AgIAAAQAAAAAAAAAAAAgwBwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -155,16 +165,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Person.cpp",
-              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Person.cpp",
               "RelativeDocumentMoniker": "Source Files\\Classes\\Person.cpp",
-              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA_Fucced_UP\\Source Files\\Classes\\Person.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\Person.cpp",
               "RelativeToolTip": "Source Files\\Classes\\Person.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-27T12:10:34.278Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WorldTiles.cpp",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\WorldTiles.cpp",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\WorldTiles.cpp",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\WorldTiles.cpp",
+              "RelativeToolTip": "Source Files\\Classes\\WorldTiles.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-28T09:10:16.621Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WorldTiles.h",
+              "DocumentMoniker": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\WorldTiles.h",
+              "RelativeDocumentMoniker": "Source Files\\Classes\\WorldTiles.h",
+              "ToolTip": "C:\\OPIUM\\Prog\\Compulsory 3\\MEGA2\\Source Files\\Classes\\WorldTiles.h",
+              "RelativeToolTip": "Source Files\\Classes\\WorldTiles.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-28T09:10:15.775Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

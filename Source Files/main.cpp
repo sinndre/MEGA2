@@ -244,7 +244,7 @@ int main()
 
 
 
-        DrawText("Use WASD if you want, idc. Maybe press other buttons too like SPACE or maybe even SCROLL or whaeffa", -550, -100, 20, YELLOW);
+        DrawText("Use WASD if you want, idc. Maybe press MOUSE buttons too or SPACE or maybe even SCROLL or whaeffa", -550, -100, 20, YELLOW);
         DrawText("QUITTERS press Esc, ADMITTING the QUITTING and that they are in fact QUITTERS", -550, -70, 20, YELLOW );
 
 
