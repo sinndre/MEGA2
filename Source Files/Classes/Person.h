@@ -16,9 +16,9 @@ public:
 	Vector2 GetPosition()const; //I think const means that 'this' fuction will not change the variable?
 	Vector2 GetCenter() const; //Needed for proper collision
 
-	bool IsAlive() const { return isAlive; }
-	void Kill() { isAlive = false; }
-	void Revive() { isAlive = true; }
+	bool IsAlive() const { return isAlive; };
+	void Kill() { isAlive = false; };
+	void Revive() { isAlive = true; };
 	bool isAlive{ true };
 
 	// 'protected' means this class and its children can access these directly.

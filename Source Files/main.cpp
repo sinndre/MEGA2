@@ -56,7 +56,7 @@ int main()
 
         //Spawn Frenemy
         float randSpeed = GetRandomValue(150.0f, 250.0f);
-        FrenemyContainer.push_back(Frenemy(FrenemySpawnPos, randSpeed, RED)); //push back adds new Frenemy at the end of the vector
+        FrenemyContainer.push_back(Frenemy(FrenemySpawnPos, randSpeed, LIGHTGRAY)); //push back adds new Frenemy at the end of the vector
     }
 
 	//Camera Setup 
@@ -91,6 +91,7 @@ int main()
 		//Updates
 		player.Update();
         Vector2 mousePos = GetScreenToWorld2D(GetMousePosition(), camera);
+        camera.target = player.GetPosition();//Camera updates to player position
 
         //Frenemy shout check
         for (auto& frenemy : FrenemyContainer)
@@ -109,13 +110,13 @@ int main()
             
         }
 
-		camera.target = player.GetPosition();//Camera updates to player position
+		
 
        
 
 
         // PLAYER Shoot bullets
-        if (IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+        if (IsMouseButtonDown(MOUSE_BUTTON_LEFT) && player.isAlive)
         {
             Vector2 aimDirection = player.AimDirection(camera);
 
@@ -126,51 +127,28 @@ int main()
             
         }
 
-        for (Bullet& bulletObject : bulletContainer)
-        {
-            bulletObject.Update();
-        }
-
-        // Move bullets. In main because I need to check collision against everything
+        //Update bullets
         for (Bullet& bullet : bulletContainer)
         {
-            bullet.Update();
+            bullet.Update(FrenemyContainer);
         }
 
-        //Check collision for BULLETS IN GENERAL. In main because I need to check collision against everything
+        // Check BULLET vs PLAYER
         for (Bullet& bullet : bulletContainer)
         {
-            if (!bullet.isAlive) continue; // Skip dead bullets
-
-            // Check bullets vs PLAYER
-            if (player.IsAlive() && bullet.owner != &player)
+            if (bullet.isAlive && player.IsAlive() && bullet.owner != &player)
             {
                 if (CheckCollisionCircles(bullet.position, 5.0f, player.GetCenter(), 20.0f))
                 {
                     player.Kill();
                     bullet.isAlive = false;
-                    continue; // Bullet is used, move to the next bullet
-                }
-            }
-
-            //Check bullets vs frenemies
-            for (Frenemy& frenemy : FrenemyContainer)
-            {
-                if (frenemy.IsAlive() && bullet.owner != &frenemy)
-                {
-                    if (CheckCollisionCircles(bullet.position, 5.0f, frenemy.GetCenter(), 20.0f))
-                    {
-                        frenemy.Kill();
-                        frenemy.respawnTimer = 5.0f;
-                        bullet.isAlive = false;
-                        break; // Bullet is used up, break from frenemy loop
-                    }
                 }
             }
         }
 
         //Bullet cleaner
-        bulletContainer.erase(
+        bulletContainer.erase
+        (
             std::remove_if(bulletContainer.begin(), bulletContainer.end(), [](const Bullet& b) {
                 return !b.isAlive;
                 }),
@@ -202,7 +180,7 @@ int main()
 
         if (player.shouting)
         {
-            DrawText("MEGA!!!", static_cast<int>(player.GetPosition().x), static_cast<int>(player.GetPosition().y -30), 20, YELLOW);
+            DrawText("MEGA!!!", static_cast<int>(player.GetPosition().x), static_cast<int>(player.GetPosition().y -30), 70, YELLOW);
         }
         
         //Loop through frenemies and draw them and their shout response
@@ -228,9 +206,10 @@ int main()
             }
         }
 
-        //Shoot bullets
+        //Keep drawing bullets
         for (const auto& bullet : bulletContainer)
         {
+            if (bullet.isAlive)
             bullet.Draw();
         }
 

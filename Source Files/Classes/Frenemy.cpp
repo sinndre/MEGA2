@@ -8,6 +8,7 @@ Frenemy::Frenemy(Vector2 startPos, float speed, Color color)
 	: Person(startPos, speed, color)
 {
 	// Frenemy stuff goes here
+	isAlive = true;
 }
 
 void Frenemy::Respawn()
@@ -29,6 +30,19 @@ float Frenemy::GetDistanceToPlayer(const Vector2& playerPos) const
 	float dy = playerPos.y - position.y;
 	float distanceToPlayer = sqrtf(dx * dx + dy * dy);
 	return distanceToPlayer;
+}
+
+void Frenemy::Draw() const
+{
+	if (!IsAlive())
+	{
+		// Dedd frenemy is BLACK
+		DrawRectangleV(position, size, BLACK);
+		return;
+	}
+
+	//Alive frenemy acts as normal
+	Person::Draw();
 }
 
 void Frenemy::ReactToShout()
@@ -61,14 +75,6 @@ void Frenemy::Update(Vector2 playerPosition, std::vector<Bullet>& bulletContaine
 {
 	if (!isAlive)
 	{
-		color = BLACK; // Set the color to black to show it's a "corpse"
-
-		
-		respawnTimer -= GetFrameTime();
-		if (respawnTimer <= 0)
-		{
-			Respawn();
-		}
 
 		return; 
 	}

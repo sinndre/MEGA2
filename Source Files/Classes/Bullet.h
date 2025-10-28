@@ -4,7 +4,7 @@
 
 #include "Person.h"
 
-
+class Frenemy;
 
 class Bullet
 {
@@ -23,7 +23,7 @@ public:
 
 	
 
-	void Update();
+	void Update(std::vector<Frenemy>& frenemies);
 
 	void Draw() const; 
 	

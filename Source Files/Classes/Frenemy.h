@@ -22,6 +22,8 @@ public:
 
     float GetDistanceToPlayer(const Vector2& playerPos) const;
 
+    void Draw() const override;
+
     enum Affiliation
     {
         mega,

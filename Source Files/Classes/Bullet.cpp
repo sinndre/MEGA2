@@ -11,6 +11,7 @@ Bullet::Bullet()
 	color = BLANK;
 	isAlive = false;
 	lifeTimer = 0.0f;
+	owner = nullptr; //pointer that doesnt point yet
 }
 
 //Convenient constructor
@@ -26,20 +27,36 @@ Bullet::Bullet(Vector2 startPos, Vector2 direction, float speed, Color color, Pe
 
 
 
-void Bullet::Update()
+void Bullet::Update(std::vector<Frenemy>& frenemies)
 {
 	if (!isAlive) return;
 
 	// Move bullet
-	position = Vector2Add(position, Vector2Scale(velocity, GetFrameTime()/2));
+	position = Vector2Add(position, Vector2Scale(velocity, GetFrameTime()));
 
+	// lifetime
 	lifeTimer -= GetFrameTime();
 	if (lifeTimer <= 0.0f) {
 		isAlive = false;
 		return;
 	}
 
-	
+	// Check for collisions with frenemies
+	for (Frenemy& frenemy : frenemies)
+	{
+		// bullets kill only alive frenemies that dont own the bullet
+		if (frenemy.IsAlive() && &frenemy != owner)
+		{
+			if (CheckCollisionCircles(this->position, 5.0f, frenemy.GetCenter(), 20.0f))
+			{
+				frenemy.Kill();
+				frenemy.Respawn();
+				frenemy.respawnTimer = 5.0f;
+				this->isAlive = false; // The bullet is now used up
+				return; // Exit the function immediately since the bullet is dead
+			}
+		}
+	}
 }
 
 void Bullet::Draw() const
