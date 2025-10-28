@@ -180,7 +180,7 @@ int main()
 
         if (player.shouting)
         {
-            DrawText("MEGA!!!", static_cast<int>(player.GetPosition().x), static_cast<int>(player.GetPosition().y -30), 70, YELLOW);
+            DrawText("MEGA!!!", static_cast<int>(player.GetPosition().x), static_cast<int>(player.GetPosition().y -80), 70, YELLOW);
         }
         
         //Loop through frenemies and draw them and their shout response

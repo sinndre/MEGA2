@@ -49,7 +49,7 @@ void Frenemy::ReactToShout()
 {
 	bool beingShoutedAt = true;
 
-	if (state != Affiliation::neutral)
+	if (isAlive && state != Affiliation::neutral)
 	{
 		return; // Do nothing if it has already picked a side
 	}
