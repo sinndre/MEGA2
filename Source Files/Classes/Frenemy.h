@@ -11,7 +11,6 @@ class Frenemy : public Person
 public:
     // Constructor
     Frenemy(Vector2 startPos, float speed, Color color);
-    bool isAlive;
 
    
     
