@@ -142,14 +142,48 @@ void Frenemy::Update(Vector2 playerPosition, std::vector<Frenemy>& allFrenemies,
 			}
 		}
 	}
-	else
+	else if (isAlive && state == Affiliation::mega)
 	{
-		if (isAlive && state == Affiliation::mega)
-		{
-			color = YELLOW;
+		color = YELLOW;
 
+		Frenemy* antimegaTarget = nullptr;
+		float minAntimegaDist = FLT_MAX; //Make a MEGAfloat
+
+		for (auto& otherFrenemy : allFrenemies)
+		{
+			// Find closest, living greatnesshating frenemy
+			if (&otherFrenemy != this && otherFrenemy.isAlive && otherFrenemy.state == Affiliation::antimega)
+			{
+				float dist = Vector2Distance(this->position, otherFrenemy.position);
+				if (dist < minAntimegaDist)
+				{
+					minAntimegaDist = dist;
+					antimegaTarget = &otherFrenemy;
+				}
+			}
+		}
+		const float shootingRange = 700.0f;
+
+		//Shoot greatnesshating frenemy
+		if (antimegaTarget != nullptr && minAntimegaDist <= shootingRange)
+		{
+			// Engage
+			if (shootCooldown <= 0)
+			{
+				shootCooldown = shootInterval;
+				Vector2 directionToTarget = Vector2Normalize(Vector2Subtract(antimegaTarget->position, this->position));
+
+				const float bulletOffset = 30.0f;
+				Vector2 bulletSpawnPos = Vector2Add(GetCenter(), Vector2Scale(directionToTarget, bulletOffset));
+
+				//  YELLOW bullet
+				bulletContainer.push_back(Bullet(bulletSpawnPos, directionToTarget, 800.f, YELLOW, this));
+			}
+		}
+		else
+		{
 			Frenemy* targetFrenemy = nullptr;
-			float minDistance = FLT_MAX; //Make a MEGAfloat
+			float minDistance = FLT_MAX;
 
 			//Find neutral frenemies
 			for (auto& otherFrenemy : allFrenemies)
@@ -194,18 +228,16 @@ void Frenemy::Update(Vector2 playerPosition, std::vector<Frenemy>& allFrenemies,
 				}
 			}
 		}
+	}
 
-		else // neutral
+	else // neutral
+	{
+		color = RED;
+
+		//  follow player unless retreating
+		if (distanceToPlayer > followStopDistance)
 		{
-			color = RED;
-
-			
-
-			//  follow player unless retreating
-			if (distanceToPlayer > followStopDistance)
-			{
-				position = Vector2Add(position, Vector2Scale(directionToPlayer, speed * GetFrameTime()));
-			}
+			position = Vector2Add(position, Vector2Scale(directionToPlayer, speed * GetFrameTime()));
 		}
 	}
 }
