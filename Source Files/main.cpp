@@ -30,7 +30,7 @@ int main()
 
 	//Frenemy setup
 	std::vector<Frenemy> FrenemyContainer;
-	int amountOfFrenemies = 5;
+	int amountOfFrenemies = 15;
 	const float FrenemySpawndistance = 4000.0f;
 
 	for (int i = 0; i < amountOfFrenemies; i++)
@@ -83,19 +83,39 @@ int main()
 		Vector2 mousePos = GetScreenToWorld2D(GetMousePosition(), camera);
 		camera.target = player.GetPosition();//Camera updates to player position
 
-		//Frenemy shout check
+		//Frenemy update
 		for (auto& frenemy : FrenemyContainer)
 		{
-			// check for shout and distance to frenemy
-			if (frenemy.isAlive && player.shouting && frenemy.isCloseToPlayer)
+			
+			frenemy.Update(player.GetPosition(), FrenemyContainer, bulletContainer, player.shouting);
+		}
+
+		//Shout checks
+		for (auto& frenemy : FrenemyContainer)
+		{
+			// PLAYER shouting
+			if (frenemy.isAlive && frenemy.state == Frenemy::Affiliation::neutral && player.shouting && frenemy.isCloseToPlayer)
 			{
 				frenemy.ReactToShout();
 			}
 
-			// Temporary panic
-			bool shouldThisFrenemyPanic = (player.shouting && frenemy.isCloseToPlayer);
-			// Update
-			frenemy.Update(player.GetPosition(), bulletContainer, shouldThisFrenemyPanic);
+			// FRENEMY shouting
+			if (frenemy.isAlive && frenemy.state == Frenemy::Affiliation::neutral)
+			{
+				for (const auto& otherFrenemy : FrenemyContainer)
+				{
+					// Check if another frenemy is a shouting "MEGA!!!" and is nearby
+					if (otherFrenemy.isAlive && otherFrenemy.state == Frenemy::Affiliation::mega && otherFrenemy.isShouting)
+					{
+						float distToShouter = Vector2Distance(frenemy.GetPosition(), otherFrenemy.GetPosition());
+						if (distToShouter < 200.0f)
+						{
+							frenemy.ReactToShout();
+							break; // React once and stop checking other shouters because shouters be shouters
+						}
+					}
+				}
+			}
 		}
 
 		// PLAYER Shoot bullets
@@ -176,6 +196,10 @@ int main()
 				{
 					DrawText("OMG no", frenemy.GetPosition().x, frenemy.GetPosition().y - 30, 20, BLUE);
 				}
+			}
+			if (frenemy.isShouting && frenemy.state == Frenemy::Affiliation::mega)
+			{
+				DrawText("MEGA!!!", frenemy.GetPosition().x, frenemy.GetPosition().y - 30, 20, YELLOW);
 			}
 		}
 

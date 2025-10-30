@@ -2,6 +2,7 @@
 #include "Bullet.h"
 #include <raymath.h>
 #include <stdlib.h>
+#include <cfloat> //Need this to check what is the MEGAlagrest number a float can hold
 
 // Constructor
 Frenemy::Frenemy(Vector2 startPos, float speed, Color color)
@@ -22,7 +23,6 @@ void Frenemy::Respawn()
 	state = Affiliation::neutral;
 	color = RED;
 	isAlive = true;
-	
 }
 
 float Frenemy::GetDistanceToPlayer(const Vector2& playerPos) const
@@ -72,12 +72,22 @@ void Frenemy::ReactToShout()
 	}
 }
 
-void Frenemy::Update(Vector2 playerPosition, std::vector<Bullet>& bulletContainer, bool isPlayerShouting)
+void Frenemy::Update(Vector2 playerPosition, std::vector<Frenemy>& allFrenemies, std::vector<Bullet>& bulletContainer, bool isPlayerShouting)
 {
 	if (!isAlive)
 	{
+		return;
+	}
 
-		return; 
+	//Shouting timer
+	if (isShouting)
+	{
+		shoutingTick++;
+		if (shoutingTick > 60) // Shouts for 1 second
+		{
+			isShouting = false;
+			shoutingTick = 0;
+		}
 	}
 
 	// Define AI parameters
@@ -92,8 +102,8 @@ void Frenemy::Update(Vector2 playerPosition, std::vector<Bullet>& bulletContaine
 		shootCooldown -= GetFrameTime();
 	}
 
-	float distance = Vector2Distance(position, playerPosition);
-	isCloseToPlayer = (distance < 200);
+	float distanceToPlayer = Vector2Distance(position, playerPosition);
+	isCloseToPlayer = (distanceToPlayer < 200);
 
 	Vector2 directionToPlayer = Vector2Normalize(Vector2Subtract(playerPosition, position));
 
@@ -102,10 +112,10 @@ void Frenemy::Update(Vector2 playerPosition, std::vector<Bullet>& bulletContaine
 	{
 		color = BLUE;
 
-		if (distance < retreatStartDistance)
+		if (distanceToPlayer < retreatStartDistance)
 			isRetreating = true;
 
-		else if (distance > retreatStopDistance)
+		else if (distanceToPlayer > retreatStopDistance)
 		{
 			isRetreating = false;
 		}
@@ -137,37 +147,65 @@ void Frenemy::Update(Vector2 playerPosition, std::vector<Bullet>& bulletContaine
 		if (isAlive && state == Affiliation::mega)
 		{
 			color = YELLOW;
-			if (distance > followStopDistance)
-			{
-				position = Vector2Add(position, Vector2Scale(directionToPlayer, speed * GetFrameTime()));
-			}
-		}
 
-		else
-		{
-			if (isAlive && state == Affiliation::neutral) color = RED;
-			// BEHAVIOR 1: If too close and shouted at, run away
-			if (isCloseToPlayer && isPlayerShouting)
-			{
-				if (distance < retreatStartDistance) isRetreating = true;
-				else if (distance > retreatStopDistance) isRetreating = false;
+			Frenemy* targetFrenemy = nullptr;
+			float minDistance = FLT_MAX; //Make a MEGAfloat
 
-				if (isRetreating)
+			//Find neutral frenemies
+			for (auto& otherFrenemy : allFrenemies)
+			{
+				if (&otherFrenemy != this && otherFrenemy.isAlive && otherFrenemy.state == Affiliation::neutral)
 				{
-					Vector2 directionAway = Vector2Scale(directionToPlayer, -1.0f);
-					position = Vector2Add(position, Vector2Scale(directionAway, speed * GetFrameTime()));
+					float dist = Vector2Distance(this->position, otherFrenemy.position);
+					if (dist < minDistance)
+					{
+						minDistance = dist;
+						targetFrenemy = &otherFrenemy;
+					}
+				}
+			}
+
+			// If a neutral target was found, chase and shout at it
+			if (targetFrenemy != nullptr)
+			{
+				const float shoutDistance = 150.0f;
+				Vector2 directionToTarget = Vector2Normalize(Vector2Subtract(targetFrenemy->position, this->position));
+
+				if (minDistance > shoutDistance)
+				{
+					// Chase the target
+					position = Vector2Add(position, Vector2Scale(directionToTarget, speed * GetFrameTime()));
+				}
+				else
+				{
+					// Shout
+					if (!isShouting)
+					{
+						isShouting = true;
+						shoutingTick = 0;
+					}
 				}
 			}
 			else
 			{
-				// back to normal
-				isRetreating = false;
-				if (distance > followStopDistance)
+				if (distanceToPlayer > followStopDistance)
 				{
 					position = Vector2Add(position, Vector2Scale(directionToPlayer, speed * GetFrameTime()));
 				}
 			}
 		}
+
+		else // neutral
+		{
+			color = RED;
+
+			
+
+			//  follow player unless retreating
+			if (distanceToPlayer > followStopDistance)
+			{
+				position = Vector2Add(position, Vector2Scale(directionToPlayer, speed * GetFrameTime()));
+			}
+		}
 	}
-	
 }

@@ -15,7 +15,7 @@ public:
 	float respawnTimer = 10.f;
 	void Respawn();
 
-	void Update(Vector2 playerPosition,  std::vector<Bullet>& bulletContainer, bool isPlayerShouting);
+	void Update(Vector2 playerPosition, std::vector<Frenemy>& allFrenemies, std::vector<Bullet>& bulletContainer, bool isPlayerShouting);
 
 	float GetDistanceToPlayer(const Vector2& playerPos) const;
 
@@ -31,6 +31,9 @@ public:
 	int state = Affiliation::neutral;
 	bool isCloseToPlayer = false;
 	void ReactToShout();
+
+	bool isShouting = false;
+	int shoutingTick = 0;
 
 private:
 
