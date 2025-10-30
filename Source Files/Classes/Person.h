@@ -17,7 +17,7 @@ public:
 	Vector2 GetCenter() const; //Needed for proper collision
 
 	bool IsAlive() const { return isAlive; };
-	void Kill() { isAlive = false; };
+	virtual void Kill() { isAlive = false; };
 	void Revive() { isAlive = true; };
 	bool isAlive{ true };
 

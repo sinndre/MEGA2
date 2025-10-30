@@ -50,8 +50,7 @@ void Bullet::Update(std::vector<Frenemy>& frenemies)
 			if (CheckCollisionCircles(this->position, 5.0f, frenemy.GetCenter(), 20.0f))
 			{
 				frenemy.Kill();
-				frenemy.Respawn();
-				frenemy.respawnTimer = 5.0f;
+			
 				this->isAlive = false; // The bullet is now used up
 				return; // Exit the function immediately since the bullet is dead
 			}

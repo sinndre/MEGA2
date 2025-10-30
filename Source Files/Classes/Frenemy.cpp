@@ -12,6 +12,13 @@ Frenemy::Frenemy(Vector2 startPos, float speed, Color color)
 	isAlive = true;
 }
 
+void Frenemy::Kill()
+{
+	isAlive = false;
+	respawnTimer = 5.0f; 
+	deathProcessed = false;
+}
+
 void Frenemy::Respawn()
 {
 	//  spawn frenemy somewhere random in the big, big infinite MEGAworld
@@ -23,6 +30,7 @@ void Frenemy::Respawn()
 	state = Affiliation::neutral;
 	color = RED;
 	isAlive = true;
+	deathProcessed = true;
 }
 
 float Frenemy::GetDistanceToPlayer(const Vector2& playerPos) const
@@ -76,6 +84,12 @@ void Frenemy::Update(Vector2 playerPosition, std::vector<Frenemy>& allFrenemies,
 {
 	if (!isAlive)
 	{
+		respawnTimer -= GetFrameTime();
+		if (respawnTimer <= 0)
+		{
+			
+			Respawn();
+		}
 		return;
 	}
 

@@ -13,7 +13,9 @@ public:
 	Frenemy(Vector2 startPos, float speed, Color color);
 
 	float respawnTimer = 10.f;
+	void Kill();
 	void Respawn();
+	bool deathProcessed = false; //Check if everything connected to the death of a frenemy has been done
 
 	void Update(Vector2 playerPosition, std::vector<Frenemy>& allFrenemies, std::vector<Bullet>& bulletContainer, bool isPlayerShouting);
 
