@@ -22,6 +22,7 @@ void Frenemy::Respawn()
 	state = Affiliation::neutral;
 	color = RED;
 	isAlive = true;
+	
 }
 
 float Frenemy::GetDistanceToPlayer(const Vector2& playerPos) const

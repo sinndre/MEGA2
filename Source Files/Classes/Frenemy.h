@@ -1,43 +1,39 @@
-#pragma once 
+#pragma once
 #include "Person.h"
-#include <raymath.h> 
-
+#include <raymath.h>
 #include <vector>
 
 class Bullet;
+class Frenemy; //Forward declare for vectorz
 
 class Frenemy : public Person
 {
 public:
-    // Constructor
-    Frenemy(Vector2 startPos, float speed, Color color);
-    bool isAlive;
+	// Constructor
+	Frenemy(Vector2 startPos, float speed, Color color);
 
-   
-    
-    float respawnTimer = 10.f;
-    void Respawn();
+	float respawnTimer = 10.f;
+	void Respawn();
 
-    void Update(Vector2 playerPosition, std::vector<Bullet>& bulletContainer, bool isPlayerShouting);
+	void Update(Vector2 playerPosition,  std::vector<Bullet>& bulletContainer, bool isPlayerShouting);
 
-    float GetDistanceToPlayer(const Vector2& playerPos) const;
+	float GetDistanceToPlayer(const Vector2& playerPos) const;
 
-    void Draw() const override;
+	void Draw() const override;
 
-    enum Affiliation
-    {
-        mega,
-        antimega,
-        neutral,
-    
-    };
+	enum Affiliation
+	{
+		mega,
+		antimega,
+		neutral,
+	};
 
-    int state =Affiliation::neutral;
-    bool isCloseToPlayer = false;
-    void ReactToShout();
+	int state = Affiliation::neutral;
+	bool isCloseToPlayer = false;
+	void ReactToShout();
 
 private:
-    
-    float shootCooldown = 0.0f;
-    bool isRetreating = false;
+
+	float shootCooldown = 0.0f;
+	bool isRetreating = false;
 };
